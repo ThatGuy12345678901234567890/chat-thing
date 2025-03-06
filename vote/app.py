@@ -3,8 +3,8 @@ from redis import Redis
 import os
 import socket, random, json, logging, base64, io, qrcode
 
-option_a = os.getenv('OPTION_A', "Star Trek")
-option_b = os.getenv('OPTION_B', "StarWars")
+option_a = os.getenv('OPTION_A', "Option 1")
+option_b = os.getenv('OPTION_B', "Option 2")
 hostname = socket.gethostname()
 
 app = Flask(__name__)
